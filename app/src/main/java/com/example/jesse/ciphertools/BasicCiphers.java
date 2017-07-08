@@ -164,11 +164,9 @@ public class BasicCiphers {
             }
         } else {
             message = message.trim() + " ";
-            for( int i = 1; i < alpha.length; i++ ){
+            for( int i = 0; i < alpha.length; i++ ){
                 message = message.toLowerCase().replaceAll(dottieReg[i], alpha[i]);
             }
-            message = message.toLowerCase().replaceAll(dottieReg[0], alpha[0]);
-
         }
         return message.toUpperCase();
     }
